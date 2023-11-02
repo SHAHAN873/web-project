@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c76e7a;
+}
+
+.main {
+  margin-top: 100px;
+  height: auto;
+  width: 600px;
+  border-style: solid;
+  border-color: black;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 5px 5px 5px 5px;
+          box-shadow: 5px 5px 5px 5px;
+  background-color: #fab18b;
+}
+
+.mainContainer {
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.mainContainer h1 {
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+.mainContainer img {
+  width: 30px;
+}
+
+.mainContainer button {
+  margin-top: 5px;
+  margin-right: 15px;
+  background: transparent;
+  border: none;
+}
+
+.textBox {
+  border: none;
+  border-bottom: solid;
+  border-width: 2px;
+  background-color: transparent;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.list li {
+  margin-bottom: 10px;
+}
+
+.textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.textbox button {
+  margin-right: 20px;
+}
+
+.trash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.trash img {
+  width: 50px;
+  margin-left: 20px;
+}
+
+.listcont {
+  width: 500px;
+}
+
+li {
+  display: block;
+}
+/*# sourceMappingURL=todo.css.map */
