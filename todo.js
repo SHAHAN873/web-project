@@ -8,26 +8,23 @@ function addTask(){
         li = document.createElement("li");
         li.innerHTML = textBox.value;
         listelem.appendChild(li);
-        deleteButton = document.createElement("button");
-        li.appendChild(deleteButton);
+        delbtn = document.createElement("button")
+        delbtn.classList.add("delete-button")
+        delbtn.style.height = "30px"
+        delbtn.style.width = "30px"
+        li.appendChild(delbtn)
         listelem.style.display="flex";
         listelem.style.flexDirection="column";
         textBox.value="" ;
 }
-function deleteTask() {
-    var listElem = document.getElementById("listelem");
-    var taskItems = listElem.getElementsByTagName("li");
-  
-    // Iterate through the list items and remove the selected ones
-    for (var i = 0; i < taskItems.length; i++) {
-      var taskItem = taskItems[i];
-      var deleteButton = taskItem.querySelector("button");
-  
-      if (deleteButton && deleteButton.classList.contains("selected")) {
-        listElem.removeChild(taskItem);
-      }
-    }
+listdiv.addEventListener("click", function (event) {
+  if (event.target.className === "delete-button") {
+    // Remove the parent <li> element when the delete button is clicked
+    const taskItem = event.target.closest("li");
+    taskItem.remove();
   }
+});
+ 
   
   
   
